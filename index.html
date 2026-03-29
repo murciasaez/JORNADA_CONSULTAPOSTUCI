@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada Creación y Gestión Consulta Post-UCI - Albacete</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#005580',
+                        'medical-light': '#e6f2f7',
+                        'medical-accent': '#00a8cc',
+                        'dark-slate': '#334155',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 85, 128, 0.85), rgba(0, 50, 80, 0.9)), url('https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="font-sans text-dark-slate antialiased bg-gray-50">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between py-3 md:h-20 items-center gap-3">
+                <div class="flex items-center gap-3">
+                    <img src="GAI-ALBACETE.png" alt="Logo GAI Albacete" class="h-10 md:h-12 w-auto">
+                    <img src="MEDICINA-ALBACETE.png" alt="Logo Facultad Medicina" class="h-10 md:h-12 w-auto border-l pl-3 border-gray-200">
+                </div>
+                <div class="flex space-x-6 items-center">
+                    <a href="#programa" class="text-xs md:text-sm font-semibold text-gray-600 hover:text-medical-blue transition uppercase tracking-wider">Programa</a>
+                    <a href="#inscripcion" class="bg-medical-blue text-white px-5 py-2.5 rounded-md font-bold hover:bg-blue-800 transition shadow-lg text-xs md:text-sm uppercase">
+                        Inscripción
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white py-16 md:py-28 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-8 inline-block">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg px-6 py-2">
+                    <span class="font-bold text-medical-accent text-xs md:text-base uppercase tracking-widest block">Equipo Post UCI &bull; GAI de Albacete</span>
+                </div>
+            </div>
+
+            <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-6 px-2">
+                CREACIÓN Y GESTIÓN DE LA CONSULTA POST-UCI
+            </h1>
+            <p class="text-xl md:text-3xl text-gray-200 font-light max-w-4xl mx-auto mb-10 leading-relaxed uppercase tracking-wide">
+                <span class="text-white font-semibold">RETOS Y OPORTUNIDADES</span> EN LA CONTINUIDAD ASISTENCIAL
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
+                <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20 shadow-2xl">
+                    <i class="far fa-calendar-alt text-medical-accent text-xl"></i>
+                    <span class="font-bold text-lg text-white uppercase">2026</span>
+                </div>
+                <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20 shadow-2xl">
+                    <i class="fas fa-map-marker-alt text-medical-accent text-xl"></i>
+                    <span class="text-lg text-white">Hospital General Universitario de Albacete</span>
+                </div>
+            </div>
+
+            <a href="#inscripcion" class="inline-block bg-medical-accent hover:bg-cyan-600 text-white text-xl font-black py-5 px-12 rounded-lg shadow-2xl transition transform hover:-translate-y-1 uppercase tracking-tighter">
+                INSCRIBIRSE AHORA
+            </a>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-bold text-medical-blue mb-6 uppercase border-l-4 border-medical-accent pl-4">Contexto de la Jornada</h2>
+                <p class="text-gray-600 mb-4">Esta actividad combina relevancia clínica e innovación organizativa, contribuyendo significativamente a la mejora integral de la atención al paciente crítico.</p>
+                <div class="space-y-3">
+                    <div class="flex gap-2 text-sm text-gray-700">
+                        <i class="fas fa-check text-medical-accent"></i>
+                        <span>Detección temprana del PICS.</span>
+                    </div>
+                    <div class="flex gap-2 text-sm text-gray-700">
+                        <i class="fas fa-check text-medical-accent"></i>
+                        <span>Modelos innovadores de protocolos multidisciplinares.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                <h3 class="font-bold text-medical-blue uppercase mb-3 text-sm tracking-widest">Dirigido a:</h3>
+                <p class="text-xs text-gray-500 leading-relaxed uppercase">
+                    Médicos Intensivistas, Primaria, Interna, Geriatría, Salud Mental, Enfermería, Fisioterapeutas, Psicólogos y Trabajadores Sociales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programa" class="py-16 bg-gray-50 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black text-center text-medical-blue mb-12 uppercase">Programa</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex gap-4 items-center">
+                    <span class="font-bold text-medical-accent text-sm">09:00</span>
+                    <p class="font-bold text-dark-slate uppercase text-sm">Bienvenida. Definición y Riesgos del PICS. (Dra. I.M. Murcia)</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-medical-blue">
+                    <p class="text-xs font-bold text-medical-blue mb-1">09:30 - 12:00 | MESA REDONDA I</p>
+                    <p class="text-sm font-semibold uppercase">Evaluación Física, Psicológica, Cognitiva y Socio-económica.</p>
+                    <p class="text-[10px] text-gray-400 mt-1 italic uppercase">Equipo Post-UCI GAI Albacete: F. Calero, M.R. Martínez, M.T. Lorenzo.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-medical-accent">
+                    <p class="text-xs font-bold text-medical-accent mb-1">12:30 - 14:00 | MESA REDONDA II</p>
+                    <p class="text-sm font-semibold uppercase">Experiencias de Éxito: "Activa UCI" y H. Santa Lucía de Cartagena.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscripcion" class="py-20 bg-white px-4 border-t border-gray-200">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-medical-blue"></div>
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-black text-dark-slate uppercase mb-2">Formulario de Inscripción</h2>
+                    <p class="text-gray-500 text-sm">Complete sus datos para solicitar plaza en la jornada.</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-xs font-black text-gray-400 uppercase mb-2 tracking-widest">¿Cuál es su perfil?</label>
+                        <select id="perfil_asistente" onchange="toggleCampos()" class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm font-bold bg-gray-50">
+                            <option value="Paciente">Soy Paciente Post-UCI</option>
+                            <option value="Familiar">Soy Familiar / Cuidador</option>
+                            <option value="Sanitario">Soy Profesional Sanitario</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-black text-gray-400 uppercase mb-2">Nombre Completo</label>
+                            <input type="text" id="nombre_usuario" required class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black text-gray-400 uppercase mb-2">DNI / NIE</label>
+                            <input type="text" id="dni_usuario" required class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm bg-gray-50">
+                        </div>
+                    </div>
+
+                    <div id="campo_centro" class="hidden animate-fade-in">
+                        <label class="block text-xs font-black text-gray-400 uppercase mb-2">Centro de Trabajo</label>
+                        <input type="text" id="centro_usuario" class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm bg-gray-50" placeholder="Hospital / Centro de Salud">
+                        <p class="mt-2 text-[10px] text-medical-blue font-bold uppercase italic">
+                            * Nota: Si es personal del SESCAM, también puede inscribirse a través de SOFOS en su centro.
+                        </p>
+                    </div>
+
+                    <button type="button" onclick="procesarInscripcion()" class="w-full bg-medical-blue hover:bg-blue-800 text-white font-black py-5 rounded-xl transition shadow-xl text-lg uppercase tracking-widest transform active:scale-95">
+                        ENVIAR SOLICITUD <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+
+                <p class="text-center text-[10px] text-gray-400 uppercase font-bold mt-8 leading-relaxed">
+                    Al hacer clic, se generará un correo dirigido a la organización.<br>
+                    Servicio de Medicina Intensiva - GAI Albacete.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto flex justify-center items-center gap-12 opacity-70 grayscale hover:grayscale-0 transition duration-500">
+            <img src="GAI-ALBACETE.png" alt="Logo GAI" class="h-12 w-auto">
+            <img src="MEDICINA-ALBACETE.png" alt="Logo Medicina" class="h-12 w-auto">
+            <img src="SESCAM.png" alt="Logo SESCAM" class="h-12 w-auto">
+        </div>
+    </section>
+
+    <footer class="bg-dark-slate text-gray-500 py-8 text-center text-[10px] font-bold uppercase tracking-widest border-t border-white/5">
+        &copy; 2026 GAI de Albacete - I Jornada Gestión Consulta Post-UCI
+    </footer>
+
+    <script>
+        // Función para mostrar/ocultar el centro de trabajo según el perfil
+        function toggleCampos() {
+            const perfil = document.getElementById('perfil_asistente').value;
+            const campoCentro = document.getElementById('campo_centro');
+            if (perfil === 'Sanitario') {
+                campoCentro.classList.remove('hidden');
+            } else {
+                campoCentro.classList.add('hidden');
+            }
+        }
+
+        function procesarInscripcion() {
+            const perfil = document.getElementById('perfil_asistente').value;
+            const nombre = document.getElementById('nombre_usuario').value;
+            const dni = document.getElementById('dni_usuario').value;
+            const centro = document.getElementById('centro_usuario').value || "No aplica";
+
+            if (!nombre || !dni) {
+                alert("Por favor, complete su nombre y DNI.");
+                return;
+            }
+
+            const subject = encodeURIComponent(`Inscripción Jornada Consulta Post-UCI - ${perfil}`);
+            const body = encodeURIComponent(
+                `SOLICITUD DE INSCRIPCIÓN\n` +
+                `--------------------------\n` +
+                `Perfil: ${perfil}\n` +
+                `Nombre: ${nombre}\n` +
+                `DNI: ${dni}\n` +
+                `Centro de Trabajo: ${centro}\n\n` +
+                `Enviado desde el portal de la Jornada de Consulta Post-UCI Albacete.`
+            );
+
+            window.location.href = `mailto:imms02@sescam.jccm.es?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
