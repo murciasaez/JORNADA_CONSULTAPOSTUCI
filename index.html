@@ -107,24 +107,27 @@
         </div>
     </section>
 
-    <section id="programa" class="py-16 bg-nature-light/50 px-4">
+<section id="programa" class="py-16 bg-white px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center text-nature-green mb-12 uppercase tracking-tighter">Programa Científico</h2>
             
-            <div class="space-y-10">
-                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
+            <div class="space-y-12">
+                <div class="bg-nature-light/50 p-6 rounded-3xl border border-nature-accent/20">
                     <h3 class="font-bold text-lg text-nature-green uppercase mb-4 flex items-center gap-2">
-                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-xs">Módulo I</span> Introducción y bases teóricas
+                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-sm">Módulo I</span> Introducción y bases teóricas
                     </h3>
-                    <ul class="space-y-3 text-sm">
-                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>09:00 - 09:15</span> <span class="font-bold text-right uppercase">Bienvenida y presentación</span></li>
-                        <li class="flex justify-between"><span>09:15 - 09:30</span> <span class="font-bold text-right uppercase">Entendiendo el PICS</span></li>
+                    <ul class="space-y-4 text-sm">
+                        <li><span class="font-bold">09:00 - 09:15</span> | Bienvenida y presentación de la jornada.</li>
+                        <li>
+                            <span class="font-bold">09:15 - 09:30</span> | Entendiendo el Síndrome Post-Cuidados Intensivos (PICS).
+                            <p class="text-xs text-gray-500 mt-1 ml-4">Definición, epidemiología y componentes. Factores de riesgo y pacientes diana.</p>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-6 md:p-8 rounded-[2rem] shadow-sm border border-gray-100">
                     <h3 class="font-bold text-lg text-nature-green uppercase mb-6 flex items-center gap-2">
-                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-xs">Módulo II</span> Consulta Post-UCI en la práctica
+                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-sm">Módulo II</span> La Consulta Post-UCI en la práctica
                     </h3>
                     <div class="space-y-6">
                         <div class="border-l-4 border-nature-accent pl-4">
@@ -132,10 +135,13 @@
                             <p class="text-sm">Diseño del modelo de consulta y la consulta física.</p>
                         </div>
                         <div class="border-l-4 border-nature-green pl-4">
-                            <p class="font-bold text-dark-slate">10:00 - 11:40 | Sesión 2: Evaluación integral</p>
-                            <ul class="grid grid-cols-1 gap-2 text-xs text-gray-600 mt-2">
-                                <li>• 10:00-10:25: Física | 10:25-10:50: Cognitiva</li>
-                                <li>• 10:50-11:15: Psicológica | 11:15-11:40: Socio-económica</li>
+                            <p class="font-bold text-dark-slate">10:00 - 11:40 | Sesión 2</p>
+                            <p class="text-sm font-semibold mb-2">Evaluación integral para el cribado del PICS:</p>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-600">
+                                <li>• 10:00 - 10:25: Evaluación física.</li>
+                                <li>• 10:25 - 10:50: Evaluación cognitiva.</li>
+                                <li>• 10:50 - 11:15: Evaluación psicológica y emocional.</li>
+                                <li>• 11:15 - 11:40: Evaluación de la incorporación social y socio-económica.</li>
                             </ul>
                         </div>
                     </div>
@@ -145,26 +151,28 @@
                     <i class="fas fa-leaf mr-2"></i> 11:40 - 12:00 CAFÉ
                 </div>
 
-                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
+                <div class="bg-nature-light/50 p-6 rounded-3xl border border-nature-accent/20">
                     <h3 class="font-bold text-lg text-nature-green uppercase mb-4 flex items-center gap-2">
-                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-xs">Módulo III</span> Experiencias de éxito
+                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-sm">Módulo III</span> Experiencias de éxito
                     </h3>
-                    <ul class="space-y-4 text-sm font-bold uppercase">
-                        <li class="flex justify-between"><span>12:30 – 12:45</span> <span class="text-right">"Activa-UCI" Albacete</span></li>
-                        <li class="flex justify-between"><span>12:45 – 13:30</span> <span class="text-right">Hospital Cartagena</span></li>
+                    <ul class="space-y-4 text-sm">
+                        <li><span class="font-bold">12:30 – 12:45</span> | La experiencia en Albacete: "Activa-UCI"</li>
+                        <li><span class="font-bold">12:45 – 13:30</span> | Experiencia de otras consultas nacionales: Hospital Cartagena.</li>
                     </ul>
                 </div>
 
-                <div class="bg-dark-slate text-white p-6 rounded-3xl flex justify-between items-center">
-                    <div>
-                        <span class="text-[10px] font-bold text-nature-accent uppercase block">13:30 - 14:00</span>
-                        <h4 class="font-bold text-lg uppercase tracking-widest leading-tight">Módulo IV: Mesa Redonda</h4>
+                <div class="bg-dark-slate text-white p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl">
+                    <div class="text-center md:text-left">
+                        <span class="bg-nature-accent text-dark-slate px-3 py-0.5 rounded-full text-[10px] font-bold uppercase mb-2 inline-block">Módulo IV</span>
+                        <h4 class="font-bold text-lg uppercase tracking-widest leading-tight">Mesa Redonda: Retos y discusión</h4>
+                        <p class="text-xs opacity-70 mt-1">13:30 – 14:00 | Creación de una consulta, discusión y preguntas.</p>
                     </div>
-                    <i class="fas fa-comments text-2xl opacity-40"></i>
+                    <div class="text-3xl opacity-40"><i class="fas fa-comments"></i></div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
+
 
     <section id="inscripcion" class="py-20 bg-white px-4">
         <div class="max-w-2xl mx-auto">
