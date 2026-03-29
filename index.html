@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada Creación y Gestión Consulta Post-UCI - Albacete</title>
+    <title>Jornada Consulta Post-UCI: Un Futuro para Pacientes y Familias - Albacete</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'medical-blue': '#005580',
-                        'medical-light': '#e6f2f7',
-                        'medical-accent': '#00a8cc',
-                        'dark-slate': '#334155',
+                        'nature-green': '#3B7A57', /* Verde hoja principal */
+                        'nature-light': '#E9F5EE', /* Verde muy suave de fondo */
+                        'nature-accent': '#C9DBC3', /* Verde musgo suave */
+                        'warm-earth': '#7D6B5D', /* Tono tierra suave para texto secundario */
+                        'dark-slate': '#2F3E46', /* Gris oscuro pizarra */
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Quicksand', 'sans-serif'], /* Fuente más redondeada y cercana */
                     }
                 }
             }
@@ -29,173 +30,248 @@
     </script>
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 85, 128, 0.85), rgba(0, 50, 80, 0.9)), url('https://images.unsplash.com/photo-1624727828489-a1e03b79bba8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            /* Usando la nueva imagen photo-1469571486292-0ba58a3f068b */
+            background-image: linear-gradient(rgba(47, 62, 70, 0.7), rgba(59, 122, 87, 0.8)), url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
         }
         html { scroll-behavior: smooth; }
+        .organic-shape {
+            border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+        }
     </style>
 </head>
-<body class="font-sans text-dark-slate antialiased bg-gray-50">
+<body class="font-sans text-dark-slate antialiased bg-nature-light/30">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between py-3 md:h-20 items-center gap-3">
                 <div class="flex items-center gap-3">
-                    <img src="GAI-ALBACETE.png" alt="Logo GAI Albacete" class="h-10 md:h-12 w-auto">
-                    <img src="MEDICINA-ALBACETE.png" alt="Logo Facultad Medicina" class="h-10 md:h-12 w-auto border-l pl-3 border-gray-200">
+                    <img src="GAI-ALBACETE.png" alt="Logo GAI Albacete" class="h-10 md:h-12 w-auto grayscale hover:grayscale-0 transition">
+                    <img src="MEDICINA-ALBACETE.png" alt="Logo Facultad Medicina" class="h-10 md:h-12 w-auto border-l pl-3 border-gray-200 grayscale hover:grayscale-0 transition">
                 </div>
                 <div class="flex space-x-6 items-center">
-                    <a href="#programa" class="text-xs md:text-sm font-semibold text-gray-600 hover:text-medical-blue transition uppercase tracking-wider">Programa</a>
-                    <a href="#inscripcion" class="bg-medical-blue text-white px-5 py-2.5 rounded-md font-bold hover:bg-blue-800 transition shadow-lg text-xs md:text-sm uppercase">
-                        Inscripción
+                    <a href="#programa" class="text-xs md:text-sm font-semibold text-warm-earth hover:text-nature-green transition uppercase tracking-wider">Nuestro Programa</a>
+                    <a href="#inscripcion" class="bg-nature-green text-white px-5 py-2.5 rounded-full font-bold hover:bg-green-800 transition shadow-lg text-xs md:text-sm uppercase tracking-wider">
+                        Inscribirse
                     </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="hero-bg text-white py-16 md:py-28 px-4">
+    <header class="hero-bg text-white py-20 md:py-32 px-4">
         <div class="max-w-5xl mx-auto text-center">
-            <div class="mb-8 inline-block">
-                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg px-6 py-2">
-                    <span class="font-bold text-medical-accent text-xs md:text-base uppercase tracking-widest block">Equipo Post UCI &bull; GAI de Albacete</span>
+            <div class="mb-10 inline-block">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-2">
+                    <span class="font-semibold text-nature-accent text-xs md:text-sm uppercase tracking-widest block">Un espacio de encuentro organizado por el Equipo Post-UCI &bull; GAI de Albacete</span>
                 </div>
             </div>
 
-            <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-6 px-2">
-                CREACIÓN Y GESTIÓN DE LA CONSULTA POST-UCI
+            <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-6 px-2 text-white">
+                Creación y Gestión de la Consulta Post-UCI
             </h1>
-            <p class="text-xl md:text-3xl text-gray-200 font-light max-w-4xl mx-auto mb-10 leading-relaxed uppercase tracking-wide">
-                <span class="text-white font-semibold">RETOS Y OPORTUNIDADES</span> EN LA CONTINUIDAD ASISTENCIAL
+            <p class="text-xl md:text-2xl text-nature-light font-medium max-w-4xl mx-auto mb-12 leading-relaxed">
+                <span class="font-bold text-white">Retos y Oportunidades:</span> Un camino compartido hacia la recuperación integral del paciente y su familia.
             </p>
             
-            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-12">
-                <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20 shadow-2xl">
-                    <i class="far fa-calendar-alt text-medical-accent text-xl"></i>
-                    <span class="font-bold text-lg text-white uppercase">2026</span>
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+                <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20 shadow-xl">
+                    <i class="far fa-calendar-alt text-nature-accent text-xl"></i>
+                    <span class="font-bold text-lg text-white">5 de Mayo, 2026</span>
                 </div>
-                <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20 shadow-2xl">
-                    <i class="fas fa-map-marker-alt text-medical-accent text-xl"></i>
-                    <span class="text-lg text-white">Hospital General Universitario de Albacete</span>
+                <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-8 py-4 rounded-xl border border-white/20 shadow-xl">
+                    <i class="fas fa-map-marker-alt text-nature-accent text-xl"></i>
+                    <span class="text-lg text-white">Salón de Actos, Facultad de Medicina de Albacete</span>
                 </div>
             </div>
 
-            <a href="#inscripcion" class="inline-block bg-medical-accent hover:bg-cyan-600 text-white text-xl font-black py-5 px-12 rounded-lg shadow-2xl transition transform hover:-translate-y-1 uppercase tracking-tighter">
-                INSCRIBIRSE AHORA
+            <a href="#inscripcion" class="inline-block bg-white hover:bg-nature-light text-nature-green text-lg font-black py-4 px-12 rounded-full shadow-2xl transition transform hover:-translate-y-1 uppercase tracking-wider">
+                Quiero Participar
             </a>
         </div>
     </header>
 
-    <section class="py-16 bg-white px-4">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-2xl font-bold text-medical-blue mb-6 uppercase border-l-4 border-medical-accent pl-4">Contexto de la Jornada</h2>
-                <p class="text-gray-600 mb-4">Esta actividad combina relevancia clínica e innovación organizativa, contribuyendo significativamente a la mejora integral de la atención al paciente crítico.</p>
-                <div class="space-y-3">
-                    <div class="flex gap-2 text-sm text-gray-700">
-                        <i class="fas fa-check text-medical-accent"></i>
-                        <span>Detección temprana del PICS.</span>
-                    </div>
-                    <div class="flex gap-2 text-sm text-gray-700">
-                        <i class="fas fa-check text-medical-accent"></i>
-                        <span>Modelos innovadores de protocolos multidisciplinares.</span>
-                    </div>
-                </div>
+    <section class="py-20 md:py-28 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-nature-green mb-4 uppercase tracking-tighter">Unidos por la Recuperación</h2>
+                <p class="text-warm-earth text-lg max-w-2xl mx-auto font-medium">Esta jornada es un puente entre los profesionales sanitarios, los pacientes y sus familias para construir juntos un mejor seguimiento tras la UCI.</p>
             </div>
-            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-                <h3 class="font-bold text-medical-blue uppercase mb-3 text-sm tracking-widest">Dirigido a:</h3>
-                <p class="text-xs text-gray-500 leading-relaxed uppercase">
-                    Médicos Intensivistas, Primaria, Interna, Geriatría, Salud Mental, Enfermería, Fisioterapeutas, Psicólogos y Trabajadores Sociales.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <section id="programa" class="py-16 bg-gray-50 px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-black text-center text-medical-blue mb-12 uppercase">Programa</h2>
-            <div class="space-y-4">
-                <div class="bg-white p-4 rounded-lg shadow-sm flex gap-4 items-center">
-                    <span class="font-bold text-medical-accent text-sm">09:00</span>
-                    <p class="font-bold text-dark-slate uppercase text-sm">Bienvenida. Definición y Riesgos del PICS. (Dra. I.M. Murcia)</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-nature-light/50 p-8 rounded-3xl border border-nature-accent shadow-inner">
+                    <h3 class="text-2xl font-bold text-nature-green mb-6 uppercase flex items-center gap-3"><i class="fas fa-user-md"></i> Para Profesionales</h3>
+                    <ul class="space-y-4 text-dark-slate leading-relaxed">
+                        <li><i class="fas fa-seedling text-nature-green mr-2"></i><strong>Herramientas prácticas:</strong> Formación para la detección temprana del Síndrome Post-UCI (PICS) en pacientes y familiares.</li>
+                        <li><i class="fas fa-seedling text-nature-green mr-2"></i><strong>Innovación Asistencial:</strong> Conocer modelos nacionales e internacionales de éxito para adaptar a nuestro hospital.</li>
+                        <li><i class="fas fa-seedling text-nature-green mr-2"></i><strong>Trabajo en Equipo:</strong> Fomentar la colaboración entre UCI, Rehabilitación, Primaria y Salud Mental.</li>
+                    </ul>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-medical-blue">
-                    <p class="text-xs font-bold text-medical-blue mb-1">09:30 - 12:00 | MESA REDONDA I</p>
-                    <p class="text-sm font-semibold uppercase">Evaluación Física, Psicológica, Cognitiva y Socio-económica.</p>
-                    <p class="text-[10px] text-gray-400 mt-1 italic uppercase">Equipo Post-UCI GAI Albacete: F. Calero, M.R. Martínez, M.T. Lorenzo.</p>
-                </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border-l-4 border-medical-accent">
-                    <p class="text-xs font-bold text-medical-accent mb-1">12:30 - 14:00 | MESA REDONDA II</p>
-                    <p class="text-sm font-semibold uppercase">Experiencias de Éxito: "Activa UCI" y H. Santa Lucía de Cartagena.</p>
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl">
+                    <h3 class="text-2xl font-bold text-warm-earth mb-6 uppercase flex items-center gap-3"><i class="fas fa-heart"></i> Para Pacientes y Familias</h3>
+                    <ul class="space-y-4 text-dark-slate leading-relaxed">
+                        <li><i class="fas fa-hand-holding-heart text-nature-accent mr-2"></i><strong>Acompañamiento integral:</strong> Entender qué es la consulta Post-UCI y cómo puede ayudar en la recuperación de secuelas físicas, cognitivas y emocionales.</li>
+                        <li><i class="fas fa-hand-holding-heart text-nature-accent mr-2"></i><strong>Apoyo a la familia:</strong> Reconocer y manejar el impacto que la estancia en UCI tiene en el entorno familiar.</li>
+                        <li><i class="fas fa-hand-holding-heart text-nature-accent mr-2"></i><strong>Voz y Participación:</strong> Un espacio para compartir experiencias y mejorar juntos la calidad de la atención tras el alta.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="inscripcion" class="py-20 bg-white px-4 border-t border-gray-200">
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-100 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-2 bg-medical-blue"></div>
-                
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-black text-dark-slate uppercase mb-2">Formulario de Inscripción</h2>
-                    <p class="text-gray-500 text-sm">Complete sus datos para solicitar plaza en la jornada.</p>
-                </div>
+    <section id="programa" class="py-20 bg-nature-light/30 px-4 border-t border-b border-nature-accent/30">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-nature-green mb-4 uppercase tracking-tighter">Programa de la Jornada</h2>
+                <div class="w-20 h-1 bg-warm-earth mx-auto mb-6"></div>
+            </div>
 
-                <form class="space-y-6">
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-2xl border-l-8 border-nature-green shadow-sm flex flex-col md:flex-row md:items-center gap-4">
+                    <span class="font-black text-nature-green text-lg bg-nature-light px-4 py-1 rounded-full">09:00 - 09:30</span>
                     <div>
-                        <label class="block text-xs font-black text-gray-400 uppercase mb-2 tracking-widest">¿Cuál es su perfil?</label>
-                        <select id="perfil_asistente" onchange="toggleCampos()" class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm font-bold bg-gray-50">
-                            <option value="Paciente">Soy Paciente Post-UCI</option>
-                            <option value="Familiar">Soy Familiar / Cuidador</option>
-                            <option value="Sanitario">Soy Profesional Sanitario</option>
+                        <h3 class="font-bold text-xl text-dark-slate uppercase">Bienvenida e Inauguración. Entendiendo el PICS</h3>
+                        <p class="text-gray-500 font-medium italic mt-1">Dra. Isabel María Murcia Sáez. Médica Intensivista. Equipo post UCI de la GAI Albacete</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-8 border-b pb-4 text-nature-green">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                        <h3 class="font-black text-2xl uppercase">MESA I: CONSULTA POST UCI EN LA PRÁCTICA</h3>
+                    </div>
+                    
+                    <div class="space-y-8 pl-4">
+                        <div class="relative border-l-2 border-dashed border-nature-accent pl-8 pb-2">
+                            <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-nature-green"></span>
+                            <p class="text-xs font-bold text-nature-green uppercase">09:30 - 10:00</p>
+                            <h4 class="font-bold text-lg text-dark-slate uppercase">Diseño del modelo de consulta y consulta física</h4>
+                            <p class="text-gray-500 text-sm italic">Dra. Isabel María Murcia Sáez</p>
+                        </div>
+                        <div class="relative border-l-2 border-dashed border-nature-accent pl-8 pb-2">
+                            <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-nature-green"></span>
+                            <p class="text-xs font-bold text-nature-green uppercase">10:00 - 10:30</p>
+                            <h4 class="font-bold text-lg text-dark-slate uppercase">Evaluación Física</h4>
+                            <p class="text-gray-500 text-sm italic">Dña. Francisca Calero Yáñez. Enfermera GAI Albacete.</p>
+                        </div>
+                        <div class="relative border-l-2 border-dashed border-nature-accent pl-8 pb-2">
+                            <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-nature-green"></span>
+                            <p class="text-xs font-bold text-nature-green uppercase">10:30 - 11:00</p>
+                            <h4 class="font-bold text-lg text-dark-slate uppercase">Evaluación psicológica y emocional</h4>
+                            <p class="text-gray-500 text-sm italic">Dña. M. del Rosario Martínez Olivas. Enfermera GAI Albacete.</p>
+                        </div>
+                        <div class="relative border-l-2 border-dashed border-nature-accent pl-8 pb-2">
+                            <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-nature-green"></span>
+                            <p class="text-xs font-bold text-nature-green uppercase">11:00 - 11:30</p>
+                            <h4 class="font-bold text-lg text-dark-slate uppercase">Evaluación cognitiva</h4>
+                            <p class="text-gray-500 text-sm italic">Dña. María Teresa Lorenzo Alfaro. Enfermera GAI Albacete.</p>
+                        </div>
+                        <div class="relative border-l-2 border-dashed border-nature-accent pl-8 pb-2">
+                            <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-nature-green"></span>
+                            <p class="text-xs font-bold text-nature-green uppercase">11:30 - 12:00</p>
+                            <h4 class="font-bold text-lg text-dark-slate uppercase">Evaluación socio-económica</h4>
+                            <p class="text-gray-500 text-sm italic">Dra. Isabel María Murcia Sáez</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center py-4">
+                    <div class="bg-nature-accent h-px flex-grow"></div>
+                    <span class="px-6 font-bold text-warm-earth uppercase tracking-widest text-sm flex items-center gap-2">
+                        <i class="fas fa-leaf"></i> 12:00 - 12:30 DESCANSO FRESCO
+                    </span>
+                    <div class="bg-nature-accent h-px flex-grow"></div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-8 border-b pb-4 text-nature-green">
+                        <i class="fas fa-star text-2xl"></i>
+                        <h3 class="font-black text-2xl uppercase">MESA II: EXPERIENCIAS DE ÉXITO</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-nature-light p-6 rounded-2xl border-r-4 border-nature-green">
+                            <p class="text-xs font-bold text-nature-green uppercase mb-1">12:30 – 13:15</p>
+                            <h4 class="font-bold text-xl text-dark-slate uppercase mb-3">EXPERIENCIAS DE ÉXITO: “Activa UCI”</h4>
+                            <p class="text-gray-600 italic text-sm">&bull; Alicia Nogerón García (Médica Geriatría) y Gloria Esther Barba Fajardo (Enfermera Geriatría). GAI Albacete.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl border-r-4 border-gray-300">
+                            <p class="text-xs font-bold text-gray-500 uppercase mb-1">13:15 – 14:00</p>
+                            <h4 class="font-bold text-xl text-dark-slate uppercase mb-3">Hospital General Santa Lucía de Cartagena</h4>
+                            <p class="text-gray-600 italic text-sm">&bull; Dra. María Dolores Mulero. Jefa de Sección SMI.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-slate p-6 rounded-2xl text-white flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl">
+                    <span class="font-black text-nature-accent text-xl">14:00 - 14:30</span>
+                    <h3 class="font-bold text-lg uppercase tracking-wider text-center">Mesa Redonda: Retos, discusión y preguntas</h3>
+                    <i class="fas fa-comments text-2xl opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscripcion" class="py-20 bg-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white p-8 md:p-16 rounded-[2rem] shadow-2xl border border-gray-100 relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-nature-accent organic-shape opacity-50"></div>
+                
+                <div class="text-center mb-12 relative z-10">
+                    <h2 class="text-4xl font-extrabold text-dark-slate uppercase mb-2 leading-none">Inscripción Abierta</h2>
+                    <p class="text-warm-earth text-lg font-medium">Este formulario es para pacientes, familiares y profesionales.</p>
+                </div>
+
+                <form class="space-y-8 relative z-10">
+                    <div class="bg-nature-light/50 p-6 rounded-xl border border-nature-accent">
+                        <label class="block text-sm font-bold text-nature-green uppercase mb-3 tracking-wider text-center">¿Cómo desea participar en la Jornada?</label>
+                        <select id="perfil_asistente" onchange="toggleCampos()" class="w-full px-5 py-4 border-2 border-gray-200 rounded-full focus:border-nature-green outline-none text-sm font-bold bg-white text-center">
+                            <option value="Paciente">Como Paciente Post-UCI</option>
+                            <option value="Familiar">Como Familiar / Cuidador</option>
+                            <option value="Sanitario">Como Profesional Sanitario</option>
                         </select>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-xs font-black text-gray-400 uppercase mb-2">Nombre Completo</label>
-                            <input type="text" id="nombre_usuario" required class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm bg-gray-50">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Nombre Completo</label>
+                            <input type="text" id="nombre_usuario" required class="w-full px-5 py-4 border-2 border-gray-100 rounded-full focus:border-nature-green outline-none text-sm bg-gray-50 transition">
                         </div>
                         <div>
-                            <label class="block text-xs font-black text-gray-400 uppercase mb-2">DNI / NIE</label>
-                            <input type="text" id="dni_usuario" required class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm bg-gray-50">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-2">DNI / NIE</label>
+                            <input type="text" id="dni_usuario" required class="w-full px-5 py-4 border-2 border-gray-100 rounded-full focus:border-nature-green outline-none text-sm bg-gray-50 transition">
                         </div>
                     </div>
 
-                    <div id="campo_centro" class="hidden animate-fade-in">
-                        <label class="block text-xs font-black text-gray-400 uppercase mb-2">Centro de Trabajo</label>
-                        <input type="text" id="centro_usuario" class="w-full px-4 py-4 border-2 border-gray-100 rounded-xl focus:border-medical-blue outline-none text-sm bg-gray-50" placeholder="Hospital / Centro de Salud">
-                        <p class="mt-2 text-[10px] text-medical-blue font-bold uppercase italic">
-                            * Nota: Si es personal del SESCAM, también puede inscribirse a través de SOFOS en su centro.
+                    <div id="campo_centro" class="hidden animate-fade-in bg-white p-6 rounded-xl border border-gray-100 shadow-inner">
+                        <label class="block text-xs font-bold text-gray-500 uppercase mb-2">Centro de Trabajo (Solo Sanitarios)</label>
+                        <input type="text" id="centro_usuario" class="w-full px-5 py-4 border-2 border-gray-200 rounded-full focus:border-nature-green outline-none text-sm bg-gray-100 transition" placeholder="Hospital / Centro de Salud / Facultad">
+                        <p class="mt-3 text-[11px] text-nature-green font-semibold uppercase italic leading-relaxed text-center">
+                            * Nota para Personal del SESCAM: La vía preferente de inscripción es a través de SOFOS. Use este formulario si tiene problemas técnicos o no pertenece al SESCAM.
                         </p>
                     </div>
 
-                    <button type="button" onclick="procesarInscripcion()" class="w-full bg-medical-blue hover:bg-blue-800 text-white font-black py-5 rounded-xl transition shadow-xl text-lg uppercase tracking-widest transform active:scale-95">
-                        ENVIAR SOLICITUD <i class="fas fa-paper-plane ml-2"></i>
+                    <button type="button" onclick="procesarInscripcion()" class="w-full bg-nature-green hover:bg-green-800 text-white font-black py-5 rounded-full transition shadow-xl text-lg uppercase tracking-widest transform active:scale-95 shadow-lg">
+                        ENVIAR MI SOLICITUD DE PLAZA <i class="fas fa-seedling ml-2"></i>
                     </button>
                 </form>
 
-                <p class="text-center text-[10px] text-gray-400 uppercase font-bold mt-8 leading-relaxed">
-                    Al hacer clic, se generará un correo dirigido a la organización.<br>
-                    Servicio de Medicina Intensiva - GAI Albacete.
+                <p class="text-center text-[11px] text-gray-400 uppercase font-bold mt-10 leading-relaxed max-w-lg mx-auto">
+                    Al enviar el formulario, se abrirá su correo con los datos dirigidos a la Dra. Isabel Murcia (Servicio de Medicina Intensiva - GAI Albacete).
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto flex justify-center items-center gap-12 opacity-70 grayscale hover:grayscale-0 transition duration-500">
-            <img src="GAI-ALBACETE.png" alt="Logo GAI" class="h-12 w-auto">
-            <img src="MEDICINA-ALBACETE.png" alt="Logo Medicina" class="h-12 w-auto">
-            <img src="SESCAM.png" alt="Logo SESCAM" class="h-12 w-auto">
+    <section class="py-12 bg-white mt-10 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-10 opacity-60 hover:opacity-100 transition duration-500">
+            <img src="GAI-ALBACETE.png" alt="GAI Albacete" class="h-10 w-auto">
+            <img src="MEDICINA-ALBACETE.png" alt="Facultad Medicina" class="h-10 w-auto">
+            <img src="SESCAM.png" alt="SESCAM" class="h-10 w-auto">
         </div>
+        <p class="text-center text-[10px] text-warm-earth uppercase font-bold mt-10 tracking-[0.3em]">Castilla-La Mancha, España | Jornada Consulta Post-UCI 2026</p>
     </section>
-
-    <footer class="bg-dark-slate text-gray-500 py-8 text-center text-[10px] font-bold uppercase tracking-widest border-t border-white/5">
-        &copy; 2026 GAI de Albacete - I Jornada Gestión Consulta Post-UCI
-    </footer>
 
     <script>
         // Función para mostrar/ocultar el centro de trabajo según el perfil
@@ -213,24 +289,25 @@
             const perfil = document.getElementById('perfil_asistente').value;
             const nombre = document.getElementById('nombre_usuario').value;
             const dni = document.getElementById('dni_usuario').value;
-            const centro = document.getElementById('centro_usuario').value || "No aplica";
+            const centro = document.getElementById('centro_usuario').value || "No aplica (Paciente/Familiar)";
 
             if (!nombre || !dni) {
-                alert("Por favor, complete su nombre y DNI.");
+                alert("Por favor, complete Nombre Completo y DNI.");
                 return;
             }
 
-            const subject = encodeURIComponent(`Inscripción Jornada Consulta Post-UCI - ${perfil}`);
+            const subject = encodeURIComponent(`Solicitud de Plaza Jornada Post-UCI - Perfil: ${perfil}`);
             const body = encodeURIComponent(
-                `SOLICITUD DE INSCRIPCIÓN\n` +
+                `SOLICITUD DE INSCRIPCIÓN (WEB)\n` +
                 `--------------------------\n` +
-                `Perfil: ${perfil}\n` +
-                `Nombre: ${nombre}\n` +
+                `Tipo de Asistente: ${perfil}\n` +
+                `Nombre completo: ${nombre}\n` +
                 `DNI: ${dni}\n` +
                 `Centro de Trabajo: ${centro}\n\n` +
-                `Enviado desde el portal de la Jornada de Consulta Post-UCI Albacete.`
+                `Enviado desde el portal informativo de la Jornada de Consulta Post-UCI.`
             );
 
+            // Dirección de correo proporcionada en la conversación anterior
             window.location.href = `mailto:imms02@sescam.jccm.es?subject=${subject}&body=${body}`;
         }
     </script>
