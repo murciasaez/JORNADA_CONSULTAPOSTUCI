@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -73,27 +73,58 @@
         </div>
     </header>
 
-    <section id="programa" class="py-16 bg-white px-4">
+    <section class="py-12 bg-white px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div>
+                    <h2 class="text-xl font-bold text-nature-green uppercase mb-3 border-l-4 border-nature-accent pl-4">Utilidad Clínica Directa</h2>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
+                        La formación proporciona herramientas prácticas para la detección temprana del PICS y el seguimiento extrahospitalario de pacientes post-UCI, mejorando la continuidad asistencial, la calidad de vida de los pacientes y la eficiencia en la atención.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-nature-green uppercase mb-3 border-l-4 border-nature-accent pl-4">Impacto en Salud de Pacientes y Familias</h2>
+                    <p class="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
+                        La detección temprana de complicaciones permite intervenciones oportunas, reduciendo reingresos y costos. <span class="text-nature-green font-bold italic">Para el paciente y su entorno, el seguimiento especializado reduce la incertidumbre tras el alta, brindando un apoyo emocional y físico que transforma el proceso de recuperación en una experiencia acompañada y segura.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-[3rem] shadow-inner border border-gray-100">
+                <h2 class="text-2xl font-bold text-dark-slate mb-6 text-center uppercase">
+                    <i class="fas fa-bullseye text-nature-green mr-2"></i> Objetivo General
+                </h2>
+                <p class="text-gray-700 leading-relaxed font-semibold mb-8 text-center italic">
+                    "Capacitar a los profesionales sanitarios en el diseño, implementación y gestión de una consulta post-UCI para mejorar la calidad de vida y el pronóstico a largo plazo de los supervivientes."
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold text-nature-green uppercase text-center sm:text-left">
+                    <div class="flex items-center justify-center sm:justify-start gap-2"><i class="fas fa-check-circle"></i> Comprender el PICS</div>
+                    <div class="flex items-center justify-center sm:justify-start gap-2"><i class="fas fa-check-circle"></i> Evaluación con escalas</div>
+                    <div class="flex items-center justify-center sm:justify-start gap-2"><i class="fas fa-check-circle"></i> Planes individuales</div>
+                    <div class="flex items-center justify-center sm:justify-start gap-2"><i class="fas fa-check-circle"></i> Modelos de éxito</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programa" class="py-16 bg-nature-light/50 px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center text-nature-green mb-12 uppercase tracking-tighter">Programa Científico</h2>
             
-            <div class="space-y-12">
-                <div class="bg-nature-light/50 p-6 rounded-3xl border border-nature-accent/20">
+            <div class="space-y-10">
+                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
                     <h3 class="font-bold text-lg text-nature-green uppercase mb-4 flex items-center gap-2">
-                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-sm">Módulo I</span> Introducción y bases teóricas
+                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-xs">Módulo I</span> Introducción y bases teóricas
                     </h3>
-                    <ul class="space-y-4 text-sm">
-                        <li><span class="font-bold">09:00 - 09:15</span> | Bienvenida y presentación de la jornada.</li>
-                        <li>
-                            <span class="font-bold">09:15 - 09:30</span> | Entendiendo el Síndrome Post-Cuidados Intensivos (PICS).
-                            <p class="text-xs text-gray-500 mt-1 ml-4">Definición, epidemiología y componentes. Factores de riesgo y pacientes diana.</p>
-                        </li>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between border-b border-gray-50 pb-2"><span>09:00 - 09:15</span> <span class="font-bold text-right uppercase">Bienvenida y presentación</span></li>
+                        <li class="flex justify-between"><span>09:15 - 09:30</span> <span class="font-bold text-right uppercase">Entendiendo el PICS</span></li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-6 md:p-8 rounded-[2rem] shadow-sm border border-gray-100">
                     <h3 class="font-bold text-lg text-nature-green uppercase mb-6 flex items-center gap-2">
-                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-sm">Módulo II</span> La Consulta Post-UCI en la práctica
+                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-xs">Módulo II</span> Consulta Post-UCI en la práctica
                     </h3>
                     <div class="space-y-6">
                         <div class="border-l-4 border-nature-accent pl-4">
@@ -101,13 +132,10 @@
                             <p class="text-sm">Diseño del modelo de consulta y la consulta física.</p>
                         </div>
                         <div class="border-l-4 border-nature-green pl-4">
-                            <p class="font-bold text-dark-slate">10:00 - 11:40 | Sesión 2</p>
-                            <p class="text-sm font-semibold mb-2">Evaluación integral para el cribado del PICS:</p>
-                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-gray-600">
-                                <li>• 10:00 - 10:25: Evaluación física.</li>
-                                <li>• 10:25 - 10:50: Evaluación cognitiva.</li>
-                                <li>• 10:50 - 11:15: Evaluación psicológica y emocional.</li>
-                                <li>• 11:15 - 11:40: Evaluación de la incorporación social y socio-económica.</li>
+                            <p class="font-bold text-dark-slate">10:00 - 11:40 | Sesión 2: Evaluación integral</p>
+                            <ul class="grid grid-cols-1 gap-2 text-xs text-gray-600 mt-2">
+                                <li>• 10:00-10:25: Física | 10:25-10:50: Cognitiva</li>
+                                <li>• 10:50-11:15: Psicológica | 11:15-11:40: Socio-económica</li>
                             </ul>
                         </div>
                     </div>
@@ -117,61 +145,51 @@
                     <i class="fas fa-leaf mr-2"></i> 11:40 - 12:00 CAFÉ
                 </div>
 
-                <div class="bg-nature-light/50 p-6 rounded-3xl border border-nature-accent/20">
+                <div class="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm">
                     <h3 class="font-bold text-lg text-nature-green uppercase mb-4 flex items-center gap-2">
-                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-sm">Módulo III</span> Experiencias de éxito
+                        <span class="bg-nature-green text-white px-3 py-1 rounded-lg text-xs">Módulo III</span> Experiencias de éxito
                     </h3>
-                    <ul class="space-y-4 text-sm">
-                        <li><span class="font-bold">12:30 – 12:45</span> | La experiencia en Albacete: "Activa-UCI"</li>
-                        <li><span class="font-bold">12:45 – 13:30</span> | Experiencia de otras consultas nacionales: Hospital Cartagena.</li>
+                    <ul class="space-y-4 text-sm font-bold uppercase">
+                        <li class="flex justify-between"><span>12:30 – 12:45</span> <span class="text-right">"Activa-UCI" Albacete</span></li>
+                        <li class="flex justify-between"><span>12:45 – 13:30</span> <span class="text-right">Hospital Cartagena</span></li>
                     </ul>
                 </div>
 
-                <div class="bg-dark-slate text-white p-8 rounded-3xl flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl">
-                    <div class="text-center md:text-left">
-                        <span class="bg-nature-accent text-dark-slate px-3 py-0.5 rounded-full text-[10px] font-bold uppercase mb-2 inline-block">Módulo IV</span>
-                        <h4 class="font-bold text-lg uppercase tracking-widest leading-tight">Mesa Redonda: Retos y discusión</h4>
-                        <p class="text-xs opacity-70 mt-1">13:30 – 14:00 | Creación de una consulta, discusión y preguntas.</p>
+                <div class="bg-dark-slate text-white p-6 rounded-3xl flex justify-between items-center">
+                    <div>
+                        <span class="text-[10px] font-bold text-nature-accent uppercase block">13:30 - 14:00</span>
+                        <h4 class="font-bold text-lg uppercase tracking-widest leading-tight">Módulo IV: Mesa Redonda</h4>
                     </div>
-                    <div class="text-3xl opacity-40"><i class="fas fa-comments"></i></div>
+                    <i class="fas fa-comments text-2xl opacity-40"></i>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="inscripcion" class="py-20 bg-nature-light/30 px-4">
+    <section id="inscripcion" class="py-20 bg-white px-4">
         <div class="max-w-2xl mx-auto">
-            <div class="bg-white p-8 md:p-16 rounded-[3rem] md:rounded-[5rem] shadow-2xl border border-nature-accent/20 text-center">
-                <h2 class="text-3xl font-black text-dark-slate uppercase mb-2">Inscripción</h2>
-                <p class="text-gray-500 mb-10 text-xs md:text-sm font-bold uppercase tracking-widest">Abierto a profesionales, pacientes y familias</p>
+            <div class="bg-nature-light p-10 md:p-16 rounded-[3rem] shadow-2xl border border-nature-accent/20 text-center">
+                <h2 class="text-3xl font-black text-dark-slate uppercase mb-2 leading-none">Inscripción</h2>
+                <p class="text-gray-500 mb-10 text-xs font-bold uppercase tracking-widest">Sanitarios, Pacientes y Familias</p>
 
                 <form class="space-y-5 text-left">
-                    <div>
-                        <label class="block text-[10px] font-black text-nature-green uppercase mb-2 ml-6">Perfil del Asistente</label>
-                        <select id="perfil" onchange="toggleCentro()" class="w-full px-8 py-5 rounded-full bg-gray-50 shadow-sm font-bold text-sm border-2 border-transparent focus:border-nature-green outline-none appearance-none">
-                            <option value="Paciente">Paciente / Familiar</option>
-                            <option value="Sanitario">Profesional Sanitario</option>
-                        </select>
-                    </div>
+                    <select id="perfil" onchange="toggleCentro()" class="w-full px-8 py-5 rounded-full bg-white shadow-sm font-bold text-sm border-2 border-transparent focus:border-nature-green outline-none appearance-none">
+                        <option value="Paciente">Paciente / Familiar</option>
+                        <option value="Sanitario">Profesional Sanitario</option>
+                    </select>
                     
-                    <div id="aviso-sofos" class="hidden bg-blue-50 p-4 rounded-2xl border-l-4 border-nature-green mb-4">
-                        <p class="text-xs text-nature-green font-bold uppercase leading-tight">
-                            <i class="fas fa-info-circle mr-1"></i> Información para Sanitarios:
-                        </p>
-                        <p class="text-[11px] text-gray-600 mt-1">
-                            Recuerde que puede realizar su inscripción oficial en su centro de trabajo a través de la plataforma <strong>SOFOS</strong>. Si tiene problemas técnicos, complete este formulario.
+                    <div id="aviso-sofos" class="hidden bg-nature-green/10 p-4 rounded-2xl border-l-4 border-nature-green mb-4">
+                        <p class="text-[11px] text-nature-green font-bold uppercase">
+                            <i class="fas fa-info-circle mr-1"></i> Sanitarios: También pueden inscribirse vía SOFOS en su centro de trabajo.
                         </p>
                     </div>
 
-                    <input type="text" id="nombre" placeholder="Nombre y Apellidos" class="w-full px-8 py-5 rounded-full bg-gray-50 text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
-                    <input type="text" id="dni" placeholder="DNI / NIE" class="w-full px-8 py-5 rounded-full bg-gray-50 text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
-                    
-                    <div id="div-centro" class="hidden">
-                        <input type="text" id="centro" placeholder="Centro de Trabajo" class="w-full px-8 py-5 rounded-full bg-gray-50 text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
-                    </div>
+                    <input type="text" id="nombre" placeholder="Nombre completo" class="w-full px-8 py-5 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
+                    <input type="text" id="dni" placeholder="DNI" class="w-full px-8 py-5 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
+                    <div id="div-centro" class="hidden"><input type="text" id="centro" placeholder="Centro de Trabajo" class="w-full px-8 py-5 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm"></div>
 
                     <button type="button" onclick="enviar()" class="w-full bg-nature-green text-white font-black py-6 rounded-full shadow-xl hover:bg-green-800 transition uppercase tracking-widest text-sm mt-4">
-                        Enviar Solicitud <i class="fas fa-paper-plane ml-2"></i>
+                        Enviar Solicitud
                     </button>
                 </form>
             </div>
@@ -185,9 +203,7 @@
             <img src="SESCAM.png" class="h-8 md:h-12">
             <img src="POSTUCI.png" class="h-8 md:h-12">
         </div>
-        <p class="text-[9px] font-black text-gray-300 uppercase tracking-[0.6em]">
-            &copy; 2026 GAI Albacete &bull; Medicina Intensiva
-        </p>
+        <p class="text-[9px] font-black text-gray-300 uppercase tracking-[0.6em]">&copy; 2026 GAI Albacete</p>
     </footer>
 
     <script>
@@ -201,12 +217,12 @@
             const perfil = document.getElementById('perfil').value;
             const nombre = document.getElementById('nombre').value;
             const dni = document.getElementById('dni').value;
-            const centro = document.getElementById('centro').value || "Particular";
+            const centro = document.getElementById('centro').value || "Paciente/Familiar";
             if(!nombre || !dni) return alert("Por favor complete sus datos");
             const subject = encodeURIComponent(`Inscripción Jornada Post-UCI - ${perfil}`);
-            const body = encodeURIComponent(`SOLICITUD DE INSCRIPCIÓN\n\nNombre: ${nombre}\nDNI: ${dni}\nPerfil: ${perfil}\nCentro: ${centro}`);
+            const body = encodeURIComponent(`Nombre: ${nombre}\nDNI: ${dni}\nPerfil: ${perfil}\nCentro: ${centro}`);
             window.location.href = `mailto:imms02@sescam.jccm.es?subject=${subject}&body=${body}`;
         }
     </script>
 </body>
-</html> 
+</html>
