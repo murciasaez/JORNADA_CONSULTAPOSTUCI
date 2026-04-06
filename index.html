@@ -175,35 +175,50 @@ Gloria Esther Barba Fajardo. Enfermera especialista en Geriatría de la GAI Alba
     </section> 
 
 
-    <section id="inscripcion" class="py-20 bg-white px-4">
-        <div class="max-w-2xl mx-auto">
-            <div class="bg-nature-light p-10 md:p-16 rounded-[3rem] shadow-2xl border border-nature-accent/20 text-center">
-                <h2 class="text-3xl font-black text-dark-slate uppercase mb-2 leading-none">Inscripción</h2>
-                <p class="text-gray-500 mb-10 text-xs font-bold uppercase tracking-widest">Sanitarios, Pacientes y Familias</p>
+   <section id="inscripcion" class="py-20 bg-white px-4">
+    <div class="max-w-2xl mx-auto">
+        <div class="bg-nature-light p-10 md:p-16 rounded-[3rem] shadow-2xl border border-nature-accent/20 text-center">
+            <h2 class="text-3xl font-black text-dark-slate uppercase mb-2 leading-none">Inscripción</h2>
+            <p class="text-gray-500 mb-10 text-xs font-bold uppercase tracking-widest">Seleccione su perfil de asistente</p>
 
-                <form class="space-y-5 text-left">
-                    <select id="perfil" onchange="toggleCentro()" class="w-full px-8 py-5 rounded-full bg-white shadow-sm font-bold text-sm border-2 border-transparent focus:border-nature-green outline-none appearance-none">
-                        <option value="Paciente">Paciente / Familiar</option>
-                        <option value="Sanitario">Profesional Sanitario</option>
-                    </select>
-                    
-                    <div id="aviso-sofos" class="hidden bg-nature-green/10 p-4 rounded-2xl border-l-4 border-nature-green mb-4">
-                        <p class="text-[11px] text-nature-green font-bold uppercase">
-                            <i class="fas fa-info-circle mr-1"></i> Sanitarios: También pueden inscribirse vía SOFOS en su centro de trabajo.
-                        </p>
+            <form class="space-y-6 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div onclick="selectPerfil('Paciente')" id="card-paciente" 
+                         class="cursor-pointer p-6 border-2 border-nature-green bg-nature-green text-white rounded-3xl transition-all shadow-md text-center group transform hover:scale-105">
+                        <i class="fas fa-heart mb-3 text-2xl"></i>
+                        <p class="font-bold text-xs uppercase tracking-wider">Paciente / Familiar</p>
                     </div>
+                    <div onclick="selectPerfil('Sanitario')" id="card-sanitario" 
+                         class="cursor-pointer p-6 border-2 border-gray-100 bg-white text-dark-slate rounded-3xl transition-all hover:border-nature-accent text-center group transform hover:scale-105">
+                        <i class="fas fa-user-md mb-3 text-2xl text-nature-green"></i>
+                        <p class="font-bold text-xs uppercase tracking-wider">Profesional Sanitario</p>
+                    </div>
+                </div>
 
-                    <input type="text" id="nombre" placeholder="Nombre completo" class="w-full px-8 py-5 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
-                    <input type="text" id="dni" placeholder="DNI" class="w-full px-8 py-5 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm">
-                    <div id="div-centro" class="hidden"><input type="text" id="centro" placeholder="Centro de Trabajo" class="w-full px-8 py-5 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm"></div>
+                <input type="hidden" id="perfil_seleccionado" value="Paciente">
+                
+                <div id="aviso-sofos" class="hidden bg-nature-green/10 p-5 rounded-2xl border-l-4 border-nature-green mb-6 animate-pulse">
+                    <p class="text-[11px] text-nature-green font-bold uppercase leading-tight">
+                        <i class="fas fa-info-circle mr-1"></i> Sanitarios: También pueden inscribirse vía SOFOS en su centro de trabajo.
+                    </p>
+                </div>
 
-                    <button type="button" onclick="enviar()" class="w-full bg-nature-green text-white font-black py-6 rounded-full shadow-xl hover:bg-green-800 transition uppercase tracking-widest text-sm mt-4">
-                        Enviar Solicitud
-                    </button>
-                </form>
-            </div>
+                <div class="space-y-4">
+                    <input type="text" id="nombre" placeholder="Nombre completo" class="w-full px-8 py-4 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm transition-all">
+                    <input type="text" id="dni" placeholder="DNI / NIE" class="w-full px-8 py-4 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm transition-all">
+                    
+                    <div id="div-centro" class="hidden">
+                        <input type="text" id="centro" placeholder="Centro de Trabajo" class="w-full px-8 py-4 rounded-full bg-white text-sm font-bold border-2 border-transparent focus:border-nature-green outline-none shadow-sm transition-all">
+                    </div>
+                </div>
+
+                <button type="button" onclick="enviar()" class="w-full bg-nature-green text-white font-black py-6 rounded-full shadow-xl hover:bg-green-800 transition uppercase tracking-widest text-sm mt-4 transform active:scale-95">
+                    Enviar Solicitud <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer class="py-16 bg-white text-center border-t border-gray-100">
         <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-30 grayscale mb-10 px-6">
@@ -215,23 +230,57 @@ Gloria Esther Barba Fajardo. Enfermera especialista en Geriatría de la GAI Alba
         <p class="text-[9px] font-black text-gray-300 uppercase tracking-[0.6em]">&copy; 2026 GAI Albacete</p>
     </footer>
 
-    <script>
-        function toggleCentro() {
-            const perfil = document.getElementById('perfil').value;
-            const isSanitario = perfil === 'Sanitario';
-            document.getElementById('div-centro').classList.toggle('hidden', !isSanitario);
-            document.getElementById('aviso-sofos').classList.toggle('hidden', !isSanitario);
+  <script>
+    function selectPerfil(tipo) {
+        // Guardamos el valor en el input oculto
+        document.getElementById('perfil_seleccionado').value = tipo;
+        
+        const cardP = document.getElementById('card-paciente');
+        const cardS = document.getElementById('card-sanitario');
+        const divCentro = document.getElementById('div-centro');
+        const avisoSofos = document.getElementById('aviso-sofos');
+
+        // Reset de estilos y visibilidad
+        if(tipo === 'Sanitario') {
+            // Estilo para Sanitario seleccionado
+            cardS.className = "cursor-pointer p-6 border-2 border-nature-green bg-nature-green text-white rounded-3xl transition-all shadow-md text-center transform hover:scale-105";
+            cardS.querySelector('i').className = "fas fa-user-md mb-3 text-2xl text-white";
+            
+            // Estilo para Paciente no seleccionado
+            cardP.className = "cursor-pointer p-6 border-2 border-gray-100 bg-white text-dark-slate rounded-3xl transition-all hover:border-nature-accent text-center transform hover:scale-105";
+            cardP.querySelector('i').className = "fas fa-heart mb-3 text-2xl text-nature-green";
+            
+            // Mostrar campos extra
+            divCentro.classList.remove('hidden');
+            avisoSofos.classList.remove('hidden');
+        } else {
+            // Estilo para Paciente seleccionado
+            cardP.className = "cursor-pointer p-6 border-2 border-nature-green bg-nature-green text-white rounded-3xl transition-all shadow-md text-center transform hover:scale-105";
+            cardP.querySelector('i').className = "fas fa-heart mb-3 text-2xl text-white";
+
+            // Estilo para Sanitario no seleccionado
+            cardS.className = "cursor-pointer p-6 border-2 border-gray-100 bg-white text-dark-slate rounded-3xl transition-all hover:border-nature-accent text-center transform hover:scale-105";
+            cardS.querySelector('i').className = "fas fa-user-md mb-3 text-2xl text-nature-green";
+
+            // Ocultar campos extra
+            divCentro.classList.add('hidden');
+            avisoSofos.classList.add('hidden');
         }
-        function enviar() {
-            const perfil = document.getElementById('perfil').value;
-            const nombre = document.getElementById('nombre').value;
-            const dni = document.getElementById('dni').value;
-            const centro = document.getElementById('centro').value || "Paciente/Familiar";
-            if(!nombre || !dni) return alert("Por favor complete sus datos");
-            const subject = encodeURIComponent(`Inscripción Jornada Post-UCI - ${perfil}`);
-            const body = encodeURIComponent(`Nombre: ${nombre}\nDNI: ${dni}\nPerfil: ${perfil}\nCentro: ${centro}`);
-            window.location.href = `mailto:imms02@sescam.jccm.es?subject=${subject}&body=${body}`;
-        }
-    </script>
+    }
+
+    function enviar() {
+        const perfil = document.getElementById('perfil_seleccionado').value;
+        const nombre = document.getElementById('nombre').value;
+        const dni = document.getElementById('dni').value;
+        const centro = document.getElementById('centro').value || "Particular (Paciente/Familiar)";
+        
+        if(!nombre || !dni) return alert("Por favor complete Nombre y DNI");
+
+        const subject = encodeURIComponent(`Inscripción Jornada Post-UCI - ${perfil}`);
+        const body = encodeURIComponent(`SOLICITUD DE INSCRIPCIÓN\n-------------------------\nPerfil: ${perfil}\nNombre: ${nombre}\nDNI: ${dni}\nCentro: ${centro}`);
+        
+        window.location.href = `mailto:imms02@sescam.jccm.es?subject=${subject}&body=${body}`;
+    }
+</script>
 </body>
 </html>
